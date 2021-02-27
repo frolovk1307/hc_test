@@ -30,4 +30,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'destination_search' => [
+        'file_name' => base_path('places.csv'),
+        'header_columns' => [
+            'name',
+            'coordinates',
+        ],
+    ],
 ];
